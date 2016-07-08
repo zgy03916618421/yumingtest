@@ -4,5 +4,6 @@
 var http=require('http');
 http.createServer(function (req,res) {
     console.log("sucess!!!!");
-    res.send("hello zgy!!!");
-}).listen(77387);
+    res.write('hello world');
+    res.end();
+}).listen(10000);
